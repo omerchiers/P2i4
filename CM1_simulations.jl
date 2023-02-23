@@ -107,13 +107,13 @@ begin
 dist2 = Binomial(n2, p2)
     x1=collect(0:n2)
     x2 = 0:(n2*0.01):n2
-    scatter(x1, pdf.(dist2, x1),yaxis= [0 , 1.0] , yticks = 0:0.1:1,lab = "Distirbution binomiale")
-    plot!(x2,pdf.(Normal(n2*p2,sqrt(n2*p2*(1-p2))), x2), lab= "Distribution normale")
+    scatter(x1, pdf.(dist2, x1),yaxis= [0 , 1.0] , yticks = 0:0.1:1,lab = "Loi binomiale")
+    plot!(x2,pdf.(Normal(n2*p2,sqrt(n2*p2*(1-p2))), x2), lab= "Loi normale")
 end
 
 # ╔═╡ 0d14697f-1384-4dd8-8727-0022031f1d3a
 md"""
-## Théorème central limite
+## Théorème limite central
 Soient une suite de variables aléatoires $\{X_n\}$ avec $f_{X_n}$ identiques pour tous $n$ avec une moyenne $\mu$ et une variance $\sigma^2$.
 
 On définit la nouvelle variable aléatoire $S_n := \frac{X_1 + X_2 + ... + X_n}{n}$
