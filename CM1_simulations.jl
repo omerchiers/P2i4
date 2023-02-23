@@ -82,7 +82,7 @@ $(@bind σ Slider(0.01:10, show_value=true))
 # ╔═╡ 9e8ef0bb-69d7-4525-8478-5c6dce84ce73
 begin
 plot(x -> pdf(Normal(μ,σ), x),-15,15,yaxis = [0, 1],xlabel = "u", lab= "Densité de probabilité")
-plot!(x -> cdf(Normal(μ,σ), x),-15,15, lab= "Probabilité cumulée")
+plot!(x -> cdf(Normal(μ,σ), x),-15,15, lab= "Fonction de répartition")
 end
 
 # ╔═╡ b31bb2dd-542a-413a-b149-f7aa650ab34a
